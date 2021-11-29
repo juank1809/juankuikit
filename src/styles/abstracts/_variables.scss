@@ -1,0 +1,37 @@
+$disabled: #e3daf9;
+$primary: #6e41e2;
+$hover: #5835b0;
+$active: #472c8a;
+
+$white: #ffffff;
+$white-s: rgba($white, 88%);
+
+$gray-m: #fafafa;
+$gray-l: #f1f1f1;
+$gray-s: #d4d4d4;
+$gray: rgba(#111111, 0.48);
+$gray-k: #6b6b6b;
+
+$black: #111;
+
+$red-girl: #f9e3e3;
+$red-boy: #f9e3e3;
+$red: #db524e;
+$super-red: #c7302b;
+
+$green: #27ae60;
+
+$blue: #428bf9;
+
+$font-family-base: "Roboto", sans-serif;
+
+$box-shadow-default: 0px 4px 4px rgba(51, 51, 51, 0.04),
+  0px 4px 16px rgba(51, 51, 51, 0.08);
+$box-shadow-input-error: 0px 4px 4px rgba(255, 196, 196, 0.04),
+  0px 4px 40px rgba(255, 196, 196, 0.24);
+$box-shadow-input-success: 0px 4px 4px rgba(39, 174, 96, 0.04),
+  0px 4px 40px rgba(39, 174, 96, 0.24);
+$box-shadow-hover: 0px 4px 4px rgba(51, 51, 51, 0.04),
+  0px 4px 56px rgba(51, 51, 51, 0.16);
+$box-shadow-active: 0px 4px 4px rgba(51, 51, 51, 0.04),
+  0px 4px 24px rgba(51, 51, 51, 0.24);

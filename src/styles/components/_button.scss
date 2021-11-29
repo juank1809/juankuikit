@@ -1,0 +1,205 @@
+.button {
+  padding: 0.625em 1.25em;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1;
+  border-radius: 4px;
+  position: relative;
+
+  svg {
+    fill: currentColor;
+    width: 1rem;
+    height: 1rem;
+  }
+  &__text {
+    font-size: 1rem;
+    transition: all 0.2s;
+  }
+
+  &--loading > * {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &--loading::after {
+    content: "";
+    margin: auto;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+
+  &--rounded {
+    border-radius: 100px;
+    padding: 0.625em;
+  }
+
+  &--squared {
+    padding: 0.6em;
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      background-color: $hover;
+    }
+
+    &:active {
+      background-color: $active;
+    }
+
+    &:focus {
+      border: 2px solid rgba($gray, 0.48);
+    }
+
+    &:disabled {
+      background-color: $disabled;
+    }
+  }
+  &--primary-white {
+    background-color: $white;
+    color: $primary;
+
+    &:hover {
+      background-color: rgba($white-s, 0.88);
+    }
+
+    &:focus {
+      border: 1px solid $gray;
+    }
+
+    &:disabled {
+      background-color: rgba(white, 0.56);
+    }
+  }
+
+  &--secondary {
+    background-color: $white;
+    color: $primary;
+    border: 2px solid $primary;
+
+    &:hover {
+      background-color: rgba(110, 65, 226, 0.04);
+      border: 2px solid $primary;
+    }
+
+    &:active {
+      background-color: rgba(110, 65, 226, 0.16);
+      border: 2px solid $primary;
+    }
+
+    &:focus {
+      border: 2px solid $gray;
+    }
+
+    &:disabled {
+      background-color: rgba($white, 0.56);
+    }
+  }
+
+  &--secondary-white {
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+      border: 2px solid $white;
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.12);
+      border: 2px solid $white;
+    }
+
+    &:focus {
+      border: 2px solid rgba(17, 17, 17, 0.48);
+    }
+
+    &:disabled {
+      opacity: 0.56;
+    }
+  }
+
+  &--secondary-dark {
+    background-color: $white;
+    color: $black;
+
+    &:hover {
+      background: rgba(17, 17, 17, 0.04);
+    }
+
+    &:active {
+      background-color: rgba(17, 17, 17, 0.04);
+    }
+
+    &:focus {
+      border: 2px solid $black;
+    }
+
+    &:disabled {
+      opacity: 0.56;
+    }
+  }
+
+  &--flat {
+    color: $primary;
+
+    &:hover {
+      background: rgba($primary, 0.04);
+    }
+
+    &:active {
+      background-color: rgba($primary, 0.16);
+    }
+
+    &:focus {
+      border: 2px solid rgba($black, 0.48);
+    }
+
+    &:disabled {
+      opacity: 0.56;
+    }
+  }
+
+  &--flat-white {
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      background: rgba($white, 0.12);
+    }
+
+    &:active {
+      background-color: rgba($white, 0.12);
+    }
+
+    &:focus {
+      border: 2px solid rgba(17, 17, 17, 0.48);
+    }
+
+    &:disabled {
+      opacity: 0.56;
+    }
+  }
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
