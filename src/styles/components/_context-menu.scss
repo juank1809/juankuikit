@@ -1,0 +1,42 @@
+.menu {
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 5px 0 5px 0;
+  width: 150px;
+  height: auto;
+  margin: 0;
+  /* use absolute positioning  */
+  position: absolute;
+  list-style: none;
+  box-shadow: $box-shadow-default;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+  width: 15.25rem;
+
+  &__list {
+    padding: 0.5em 1em;
+    color: #111;
+    height: 2.5rem;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:hover {
+      background-color: $gray-l;
+    }
+  }
+
+  &__divider {
+    background-color: $gray-m;
+    cursor: default;
+    height: 2.5rem;
+    padding: 0.5em 1em;
+
+    display: flex;
+    align-items: center;
+    font-size: 0.8125rem;
+    color: $black;
+  }
+}
