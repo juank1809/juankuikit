@@ -1,0 +1,58 @@
+.drop-zone {
+  &__container {
+    width: 42.188rem;
+    height: 5.75rem;
+    border-radius: 4px;
+    background-color: $white;
+    box-shadow: $box-shadow-default;
+    transition: all 0.2s;
+
+    &:hover {
+      box-shadow: $box-shadow-active;
+    }
+  }
+  &__progress {
+    color: $disabled;
+    display: inline-flex;
+    align-items: center;
+  }
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1.25em;
+    span {
+      color: $primary;
+    }
+  }
+
+  &__description {
+    color: $gray;
+    margin-top: 8px;
+  }
+
+  &--on-drag {
+    background-color: $primary;
+    box-shadow: $box-shadow-default;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  &__file-success {
+    background-color: $gray-l;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      fill: $primary;
+    }
+  }
+}
