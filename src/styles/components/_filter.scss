@@ -1,0 +1,47 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $gray-s;
+  transition: all 0.2s;
+
+  &__container {
+    display: flex;
+  }
+
+  span {
+    color: $black;
+    padding: 1em 1.5em;
+  }
+
+  &--left {
+    border-radius: 4px 0 0 4px;
+    z-index: 1;
+  }
+
+  &--center {
+    border-radius: 0;
+    margin-left: -2px;
+    &:hover {
+      z-index: 1;
+    }
+  }
+
+  &--right {
+    border-radius: 0 4px 4px 0;
+    margin-left: -2px;
+  }
+
+  &:hover {
+    border: 2px solid $gray-k;
+    cursor: pointer;
+  }
+
+  &--active {
+    border: 2px solid $primary;
+    z-index: 2;
+    &:hover {
+      border: 2px solid $hover;
+    }
+  }
+}
