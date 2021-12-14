@@ -64,3 +64,8 @@ Example.args = {
     <Filter label="Example." />,
   ],
 };
+
+export const TwoFilterExample = ExampleTemplate.bind({});
+TwoFilterExample.args = {
+  children: [<Filter label="This is left" />, <Filter label="This is right" />],
+};

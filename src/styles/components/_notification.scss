@@ -1,0 +1,20 @@
+.notification {
+  &__container {
+    width: 24.625rem;
+    border-radius: 8px;
+    box-shadow: $box-shadow-default;
+  }
+  &__header {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+
+  &__text-and-button-container {
+    padding: 1.25em;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+  }
+}

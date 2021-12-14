@@ -3,10 +3,11 @@ import { AddIcon } from "../Icons";
 
 export interface ButtonProps {
   type: buttonType;
-  rounded: boolean;
-  hasIcon: boolean;
+  rounded?: boolean;
+  hasIcon?: boolean;
   label: string;
-  isLoading: boolean;
+  isLoading?: boolean;
+  className?: string;
 }
 
 type buttonType =
@@ -24,6 +25,7 @@ const Button: React.FC<ButtonProps> = ({
   hasIcon = false,
   label,
   isLoading = false,
+  className,
 }) => {
   return (
     <button
@@ -31,7 +33,7 @@ const Button: React.FC<ButtonProps> = ({
         rounded && hasIcon && !label ? "button--rounded" : ""
       } ${!label && hasIcon && "button--squared"} ${
         isLoading && "button--loading"
-      }`}
+      } ${className}`}
     >
       {hasIcon && <AddIcon />}
 

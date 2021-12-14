@@ -1,0 +1,15 @@
+.success-icon {
+  &__container {
+    background-color: lighten($green, 45%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    svg {
+      fill: $green;
+    }
+  }
+}

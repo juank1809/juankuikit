@@ -1,0 +1,15 @@
+.error-icon {
+  &__container {
+    background-color: $red-girl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    svg {
+      fill: $red;
+    }
+  }
+}
