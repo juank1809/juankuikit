@@ -1,0 +1,78 @@
+.island {
+  &__progress {
+    background-color: $green;
+    position: relative;
+    z-index: 3;
+    span {
+      color: $white;
+      margin-left: 1.25rem;
+    }
+
+    &--on-progress {
+      border-radius: 14px 0 0 0;
+    }
+
+    &--completed {
+      border-radius: 14px 11px 0 0;
+    }
+  }
+
+  &__container {
+    width: 25.125rem;
+    height: 12.5rem;
+    background-color: $primary;
+    border-radius: 14px;
+    position: relative;
+  }
+
+  &__shape {
+    position: absolute;
+    z-index: 1;
+    right: 0.1px;
+    border-radius: 50% 13% 0% 100% / 0% 10% 100% 100%;
+    background-color: lighten($primary, 15%);
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      fill: $white;
+      width: 2rem;
+      height: 2rem;
+      margin-left: 1.375rem;
+    }
+  }
+
+  &__body {
+    padding: 1.25rem 4.75rem 1.25rem 1.25rem;
+
+    margin-bottom: 3rem;
+    & > * {
+      margin-top: 5px;
+    }
+  }
+
+  &__heading {
+    color: $white;
+  }
+
+  &__description {
+    color: $white;
+    margin-bottom: 1.75rem;
+  }
+
+  &__main-button {
+    margin-right: 24px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+
+    button:nth-child(2) {
+      margin-right: 12px;
+    }
+  }
+}

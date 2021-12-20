@@ -1,0 +1,59 @@
+.input {
+  width: 100%;
+  padding: 1rem;
+
+  &::placeholder {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $gray;
+  }
+
+  &__container {
+    background-color: $white;
+    width: 30.125rem;
+    height: 3.5rem;
+    position: relative;
+
+    box-shadow: $box-shadow-default;
+    position: relative;
+    display: inline-flex;
+
+    &--error {
+      background-color: $red-girl;
+    }
+
+    &--success {
+      background-color: lighten($green, 45%);
+    }
+    &--disabled > * {
+      opacity: 0.24;
+      cursor: default;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+    color: $gray;
+    transition: transform 150ms ease-out, font-size 150ms ease-out;
+  }
+
+  &:focus + &__label,
+  &--filled + &__label {
+    transform: translateY(-75%);
+    font-size: 0.75em;
+  }
+
+  &__error-message {
+    color: $red;
+    margin-top: 8px;
+  }
+
+  &__success-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: $green;
+  }
+}

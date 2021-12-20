@@ -1,10 +1,18 @@
 export interface SuccessIconProps {
   className?: string;
+  withBackground?: boolean;
 }
 
-const SuccessIcon: React.FC<SuccessIconProps> = ({ className }) => {
+const SuccessIcon: React.FC<SuccessIconProps> = ({
+  className,
+  withBackground,
+}) => {
   return (
-    <div className="success-icon__container">
+    <div
+      className={`success-icon__container ${
+        withBackground ? "success-icon__container--background" : ""
+      }`}
+    >
       <svg
         width="16"
         height="16"

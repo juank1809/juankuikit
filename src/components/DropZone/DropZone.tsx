@@ -8,7 +8,7 @@ const DropZone: React.FC = () => {
   const [files, setFiles] = useState<Array<File>>([]);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
-    onDrop: (files) => {
+    onDrop: (files: File[]) => {
       setFiles(files);
     },
     maxFiles: 1,

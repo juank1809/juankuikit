@@ -1,6 +1,5 @@
 .success-icon {
   &__container {
-    background-color: lighten($green, 45%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,5 +10,9 @@
     svg {
       fill: $green;
     }
+  }
+
+  &__container--background {
+    background-color: lighten($green, 45%);
   }
 }
