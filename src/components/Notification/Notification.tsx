@@ -16,7 +16,7 @@ const Notification: React.FC<NotificationProps> = ({
 }) => {
   let icon;
   if (state === "success") {
-    icon = <SuccessIcon />;
+    icon = <SuccessIcon withBackground />;
   } else if (state === "error") {
     icon = <ErrorIcon />;
   } else {

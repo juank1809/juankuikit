@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Trayy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A personal component library, made 100% following a UI KIT Design from Figma Community with the goal to develop pixel-perfect React Components.
 
-## Available Scripts
+## How I worked on this project
 
-In the project directory, you can run:
+My goal was to develop a Design System using the React Library and a CSS framework such as SASS.
 
-### `yarn start`
+- I built this Design System entirely based on a [Figma Design](<https://www.figma.com/file/GO5G1ReY3x31Wf3NOgjRd2/Browk-UI-KIT-(Community)>), striving to be pixel-perfect in order to develop a keen eye for designs.
+- I used feature branches and pull requests, as well as mindful and meaningful commits.
+- Built a good CSS Architecture, abstracting SASS Variables, Themes, and Components into their own folder.
+- Extense deeply my CSS Knowledge in order to not rely on Libraries like Material UI or Boostrap in the future.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to navegate on this project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Complex Components with utility-performance hooks (e.g useCallback) [Example code](https://github.com/juank1809/juankuikit/blob/main/src/components/ContextMenu/ContextMenu.tsx)
+- BEM Methodology to help naming my CSS Classes, used in order to achieve reusable CSS components [Example code](https://github.com/juank1809/juankuikit/blob/main/src/styles/components/_drop-zone.scss)
+- Display different component states (e.g, hover, active, onDrag, etc) through Storybook Stories [Example code](https://github.com/juank1809/juankuikit/blob/main/src/components/Input/Input.stories.tsx) or [Storybook Example](https://618e876ea6e72f003acdc5be-mednbqlvpw.chromatic.com/?path=/story/components-input--default-empty)
 
-### `yarn test`
+## Next future features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Documenting extensively on how to use the components through storybook.
+- Refactor some of the code especially [this part](https://github.com/juank1809/juankuikit/blob/main/src/components/DropZone/DropZone.tsx)
+- Build a small App using these components.
 
-### `yarn build`
+## Available scripts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In these projects are only two scripts:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn storybook
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To see the components stories in action [or go to this link](https://618e876ea6e72f003acdc5be-mednbqlvpw.chromatic.com/)
 
-### `yarn eject`
+```bash
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To see some of the components in action (to see Context Menu just right click)
